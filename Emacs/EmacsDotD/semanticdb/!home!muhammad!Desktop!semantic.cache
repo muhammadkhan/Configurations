@@ -1,0 +1,31 @@
+;; Object Desktop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Desktop/"
+  :tables
+  (list
+    (semanticdb-table "MadLibs.java"
+      :major-mode 'jde-mode
+      :tags 
+        '( ("java.util.Scanner" include nil nil [1 26])
+            ("MadLibs" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [77 90]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53 2469]))                  
+                :type "class")
+                nil [27 2471]))          
+      :file "MadLibs.java"
+      :pointmax 2472
+      :fsize 2516
+      :lastmodtime '(22029 59264 353257 144000)
+      :unmatched-syntax nil))
+  :file "!home!muhammad!Desktop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

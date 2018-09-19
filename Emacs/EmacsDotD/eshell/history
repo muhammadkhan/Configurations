@@ -1,0 +1,128 @@
+pdflatex report.tex 
+pdflatex report.tex 
+pdflatex report.tex 
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex report.tex
+pdflatex cv.tex
+pdflatex cv.tex
+pdflatex cv.tex
+pdflatex cv.tex
+pdflatex cv.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+pdflatex 5500_hw1.tex
+make
+pdflatex 5500_hw1.tex
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+pdflatex
+python
+python3
+python
+python cheme7740_lab1.py 
+python3
+python
+java -version
+javac HS.java 
+javac HS.java 
+java HS
+javac HS.java
+java HS
+javac HS.java
+java HS
+javac HS.java
+java HS
+javac HS.java
+java HS
+javac HS.java && java HS
+cd ..
+ls
+make
+ocaml
+pwd
+cd Desktop/
+ls
+cd Documents
+cd ../Downloads/
+cd ../Documents/
+ocaml
+toplevel
+echo lol
+echo $PATH
+/usr/local/bin/ocaml
+ocaml
+echo $PATH
+pwd
+cd ..
+ls
+ls -a
+python
+ls
+python excelParse.py 
+python excelParse.py liquids.xlsx 
+python
+python3 excelParse.py liquids.xlsx 
+python3
+cd Desktop
+touch file.py
+python3
+python3 file.py
+cd Desktop
+git checkout https://github.com/muhammadkhan/Configurations.git
+git clone https://github.com/muhammadkhan/Configurations.git
+cd Configurations/
+mkdir Emacs
+cd Emacs
+man cp
+cp ~/.emacs emacs.conf
+vim ~/.emacs
