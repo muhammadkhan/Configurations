@@ -1,64 +1,3 @@
-pdflatex report.tex 
-pdflatex report.tex 
-pdflatex report.tex 
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex report.tex
-pdflatex cv.tex
-pdflatex cv.tex
-pdflatex cv.tex
-pdflatex cv.tex
-pdflatex cv.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-pdflatex 5500_hw1.tex
-make
-pdflatex 5500_hw1.tex
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
-make
 make
 make
 make
@@ -126,3 +65,64 @@ cd Emacs
 man cp
 cp ~/.emacs emacs.conf
 vim ~/.emacs
+cd Desktop/Configurations/Emacs/
+ls
+mkdir EmacsDotD
+cd EmacsDotD/
+cp -r ~/.emacs.d/ ./
+ls
+ls -a
+rmdir
+rmdir -h
+cd ..
+rmdir EmacsDotD/
+rmdir -r EmacsDotD/
+rmdir -p EmacsDotD/
+mkdir EmacsDotD
+cp -r ~/.emacs.d/* ./EmacsDotD/
+cd ..
+git status
+cd Emacs/
+git status
+cd ..
+git add -A
+git status
+git status | grep M
+git rm Emacs/Makefile
+git commit -m "Initial upload of Emacs Config"
+git push origin master
+cd ..
+git status
+git add -A
+git commit -m "2nd->3rd"
+git push origin mater
+git push origin master
+git clone https://github.com/muhammadkhan/Sniffy.git
+cd Sniffy
+ls
+cd Desktop
+mkdir BlockForm
+cd BlockForm/
+ls
+la -a
+ls -a
+ls
+git
+git init
+ls
+ls -a
+git status
+git add -A
+git commit -m "Initial commit"
+git push origin master
+git remote add origin git@github.com:muhammadkhan/BlockForm.git
+git push origin master
+git push origin master
+git remote add origin https://github.com/muhammadkhan/BlockForm.git
+git remote remove origin
+git remote add origin https://github.com/muhammadkhan/BlockForm.git
+git push origin master
+echo lol
+echo $PATH
+echo $SHELL
+zsh
