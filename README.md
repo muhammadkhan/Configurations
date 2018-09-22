@@ -3,5 +3,4 @@ A repository consisting of my startup configurations (at the time of writing, on
 
 Emacs Screenshot:
 
-![Emacs]
-(https://github.com/muhammadkhan/Configurations/blob/master/emacs.png)
+![Emacs](https://github.com/muhammadkhan/Configurations/blob/master/emacs.png)
