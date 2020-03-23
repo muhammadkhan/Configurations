@@ -1,128 +1,128 @@
-make
-make
-make
-make
-make
-make
-pdflatex
-python
-python3
-python
-python cheme7740_lab1.py 
-python3
-python
-java -version
-javac HS.java 
-javac HS.java 
-java HS
-javac HS.java
-java HS
-javac HS.java
-java HS
-javac HS.java
-java HS
-javac HS.java
-java HS
-javac HS.java && java HS
-cd ..
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pbpaste | wc -w
+man pbpaste
+wc
+man wc
+wc
+wc
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+pbpaste
+dad
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+latexdiff
+latexdiff -h
+pdflatex Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
 ls
-make
-ocaml
-pwd
-cd Desktop/
-ls
-cd Documents
-cd ../Downloads/
-cd ../Documents/
-ocaml
-toplevel
-echo lol
-echo $PATH
-/usr/local/bin/ocaml
-ocaml
-echo $PATH
-pwd
-cd ..
-ls
-ls -a
-python
-ls
-python excelParse.py 
-python excelParse.py liquids.xlsx 
-python
-python3 excelParse.py liquids.xlsx 
-python3
-cd Desktop
-touch file.py
-python3
-python3 file.py
-cd Desktop
-git checkout https://github.com/muhammadkhan/Configurations.git
-git clone https://github.com/muhammadkhan/Configurations.git
-cd Configurations/
-mkdir Emacs
-cd Emacs
-man cp
-cp ~/.emacs emacs.conf
-vim ~/.emacs
-cd Desktop/Configurations/Emacs/
-ls
-mkdir EmacsDotD
-cd EmacsDotD/
-cp -r ~/.emacs.d/ ./
-ls
-ls -a
-rmdir
-rmdir -h
-cd ..
-rmdir EmacsDotD/
-rmdir -r EmacsDotD/
-rmdir -p EmacsDotD/
-mkdir EmacsDotD
-cp -r ~/.emacs.d/* ./EmacsDotD/
-cd ..
-git status
-cd Emacs/
-git status
-cd ..
-git add -A
-git status
-git status | grep M
-git rm Emacs/Makefile
-git commit -m "Initial upload of Emacs Config"
-git push origin master
-cd ..
-git status
-git add -A
-git commit -m "2nd->3rd"
-git push origin mater
-git push origin master
-git clone https://github.com/muhammadkhan/Sniffy.git
-cd Sniffy
-ls
-cd Desktop
-mkdir BlockForm
-cd BlockForm/
-ls
-la -a
-ls -a
-ls
-git
-git init
-ls
-ls -a
-git status
-git add -A
-git commit -m "Initial commit"
-git push origin master
-git remote add origin git@github.com:muhammadkhan/BlockForm.git
-git push origin master
-git push origin master
-git remote add origin https://github.com/muhammadkhan/BlockForm.git
-git remote remove origin
-git remote add origin https://github.com/muhammadkhan/BlockForm.git
-git push origin master
-echo lol
-echo $PATH
-echo $SHELL
-zsh
+latexmk Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+latexmk Khan_dNa_paper.tex
+pdflatex Khan_dNa_paper.tex
+man latexmk
+latexmk -f -pdf Khan_dNa_paper.tex
+latexmk -f -pdf Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+dsjfadsiofjdsa
+sdiaofjoaisdf
+aosdifjadosifjads
+adsofijadsiofjadsoifjadosif
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex
+latexmk -f -pdf -synctex=1 Khan_dNa_paper.tex

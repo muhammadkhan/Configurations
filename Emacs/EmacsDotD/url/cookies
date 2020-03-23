@@ -1,0 +1,14 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".stackexchange.com"
+  [url-cookie "prov" "af0ef0a5-968c-4862-84b8-4068cd4e35a5" "Fri, 01-Jan-2055 00:00:00 GMT" "/" ".stackexchange.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

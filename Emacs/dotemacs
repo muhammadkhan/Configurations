@@ -31,6 +31,64 @@
 (google-this-mode 1)
 (global-display-line-numbers-mode)
 
+;;Make compilation window automatically disappear if successful
+(setq compilation-finish-functions
+	(lambda (buf str)
+		(if (null (string-match ".exited abnormally.*" str))
+		;; no errors
+		(progn
+			(run-at-time "0.4 sec" nil
+				(lambda ()
+					(select-window (get-buffer-window (get-buffer-create "*compilation*")))
+					(switch-to-buffer nil)))
+			(message "No Compilation Errors!")))))
+
+(defun turn-on-outline-minor-mode ()
+ (outline-minor-mode 1))
+(add-hook 'LaTeX-mode-hook 'turn-on-outline-minor-mode)
+(add-hook 'latex-mode-hook 'turn-on-outline-minor-mode)
+(setq outline-minor-mode-prefix "\C-c\@")
+
+;; FlySpell
+(setq ispell-program-name "aspell")
+(setq ispell-dictionary "english")
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'flyspell-buffer)
+
+;; Auctex-LatexMK
+;;(use-package auctex-latexmk
+;;	:ensure t)
+(eval-after-load "tex"
+	'(progn
+		(add-to-list 'TeX-expand-list
+			     '("%(-PDF)"
+			       (lambda ()
+				(cond ((string-match "TeX-engine: pdftex" (buffer-string)) "-pdf")
+				      ((string-match "TeX-engine: luatex" (buffer-string)) "-pdflatex=lualatex -pdf")
+				      ((string-match "TeX-engine: xetex"  (buffer-string)) "-pdflatex=xelatex -pdf")
+				      (t "-dvi -pdfps")))))
+		(add-to-list 'TeX-command-list
+			'("Latexmk" "latexmk %(-PDF) -synctex=1 %s"
+			TeX-run-TeX nil t
+			:help "Run Latexmk on file to build everything."))
+		(setq TeX-command-default "Latexmk")
+		)
+	)
+(setq org-latex-to-pdf-process (list "latexmk -f -pdf %t"))
+(defun th/pdf-view-revert-buffer-maybe (file)
+	(let ((buf (find-buffer-visiting file)))
+		(when buf
+			(with-current-buffer buf
+				(when (derived-mode-p 'pdf-view-mode)
+				 (pdf-view-revert-buffer nil t))))))
+(add-hook 'TeX-after-TeX-LaTeX-command-finished-hook
+	#'th/pdf-view-revert-buffer-maybe)
+(add-hook 'TeX-after-compilation-finished-functions
+	#'th/pdf-view-revert-buffer-maybe)
+
+;; Font (original is Terminus-9)
+(set-default-font "Monaco-12")
+
 ;;Startup Screen
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
@@ -42,6 +100,10 @@
 ;;Display Time
 (load "time" t t)
 (display-time)
+
+;; Wind Move (easier than C-x o)
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
 
 ;; EWW (Emacs Web Browser)
 (setq eww-search-prefix "https://www.google.com/search?q=")
@@ -87,15 +149,43 @@
 ;; Window split line
 (set-face-attribute 'vertical-border nil :foreground "#303030")
 
+;; YASnippets
+(yas-global-mode 1)
+
+;; EShell Aesthetics
+;; (defmacro with-face (str &rest properties)
+;;   `(propertize ,str 'face (list ,@properties)))
+
+;; (defun shk-eshell-prompt ()
+;;   (let ((header-bg "black"))
+;;     (concat
+;;      (with-face (concat (eshell/pwd) " ") :background header-bg)
+;;      (with-face (format-time-string "(%Y-%m-%d %H:%M) " (current-time)) :background header-bg :foreground "red")
+;;      (with-face
+;;       (or (ignore-errors (format "(%s)" (vc-responsible-backend default-directory))) "")
+;;       :background header-bg)
+;;      (with-face "\n" :background header-bg)
+;;      (with-face user-login-name :foreground "blue")
+;;      "@"
+;;      (with-face "localhost" :foreground "green")
+;;      (if (= (user-uid) 0)
+;;          (with-face " #" :foreground "red")
+;;        " $")
+;;      " ")))
+;; (setq eshell-prompt-function 'shk-eshell-prompt)
+;; (setq eshell-highlight-prompt nil)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(TeX-source-correlate-mode t)
+ '(TeX-source-correlate-start-server t)
  '(doc-view-continuous t)
  '(package-selected-packages
    (quote
-    (doom-modeline neotree doom-themes all-the-icons tabbar auto-complete org magit twittering-mode tuareg jdee google-this git exec-path-from-shell cuda-mode auctex))))
+    (auctex-latexmk pdf-tools yasnippet-snippets yasnippet doom-modeline neotree doom-themes all-the-icons tabbar auto-complete org magit twittering-mode tuareg jdee google-this git exec-path-from-shell cuda-mode auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -103,3 +193,4 @@
  ;; If there is more than one, they won't work right.
  )
 (global-set-key (kbd "C-c #") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-c C-v") 'revert-buffer)
